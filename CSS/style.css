@@ -1,0 +1,49 @@
+h1.zadanie1{
+    background-color: DodgerBlue;
+}
+p.zadanie1{
+    background-color: Tomato;
+    margin: 0px;
+    margin-top: -5px;
+    margin-bottom: 25px;
+}
+
+img.zadanie4{
+    border: 20px solid Violet;
+}
+
+p.zadanie4{
+    border: 5px dashed Gold;
+}
+p{
+    margin: 20px;
+    padding: 15px;
+}
+body{
+    background-color: #222;
+    color: #eee;
+}
+
+p.zadanie2{
+    background-color: rgba(0, 128, 0, 0.3);
+}
+
+div.zadanie2{
+    background-image: url("cegla_tlo.jpg");
+}
+
+h1{
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-radius: 10px;
+    border-color: darkgray;
+    margin: 0px;
+    padding: 15px;
+}
+
+#paddingAndWidth{
+    padding: 15px;
+    background-color: hsla(39, 100%, 50%, 0.5);
+    width: 750px;
+    box-sizing: border-box;
+}
