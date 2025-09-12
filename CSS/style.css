@@ -1,43 +1,50 @@
-h1.zadanie1{
-    background-color: DodgerBlue;
+h1.zadanie1 {
+    background-color: dodgerblue;
 }
+
+p.zadanie1 {
+    background-color: tomato;
+}
+
+p.zadanie2 {
+    background-color: rgba(0, 128, 0, 0.3);
+}
+
+body {
+    background-color: #222;
+    color: lightgray;
+}
+
+div.zadanie2{
+    background-image: url(cegla_tlo.jpg);
+}
+
+img.zadanie4{
+    border: 20px solid violet;
+    outline: 20px dotted blue;
+}
+
+p.zadanie4{
+    border: dashed 5px gold
+}
+
+h1{
+    border-bottom: 5px solid;
+    border-left: 5px solid;
+    border-radius: 10px;
+    border-color: darkgray;
+    margin: 0px;
+    padding: 15px;
+}
+
 p.zadanie1{
-    background-color: Tomato;
     margin: 0px;
     margin-top: -5px;
     margin-bottom: 25px;
 }
 
-img.zadanie4{
-    border: 20px solid Violet;
-}
-
-p.zadanie4{
-    border: 5px dashed Gold;
-}
 p{
     margin: 20px;
-    padding: 15px;
-}
-body{
-    background-color: #222;
-    color: #eee;
-}
-
-p.zadanie2{
-    background-color: rgba(0, 128, 0, 0.3);
-}
-
-div.zadanie2{
-    background-image: url("cegla_tlo.jpg");
-}
-
-h1{
-    border-bottom: 5px solid black;
-    border-left: 5px solid black;
-    border-radius: 10px;
-    border-color: darkgray;
-    margin: 0px;
     padding: 15px;
 }
 
@@ -46,4 +53,18 @@ h1{
     background-color: hsla(39, 100%, 50%, 0.5);
     width: 750px;
     box-sizing: border-box;
+}
+
+p.zadanie6{
+    min-height: 70px;
+    max-height: 140px;
+    width: 50%;
+    border: 1px solid #4CAF50;
+    padding: 8px;
+}
+
+p.zadanie7{
+    outline-style: dashed;
+    outline-width: thick;
+    outline-offset: 15px;
 }
