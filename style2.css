@@ -1,0 +1,32 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+th{
+    color: #10139d;
+    border: 2px solid black;
+}
+
+.table-name{
+    color: #ffffff;
+    font-size: 20px;
+}
+/* 
+tr:nth-child(odd){
+    background-color: #bddfd0;
+}
+
+tr:nth-child(even){
+    background-color: #5ab990;
+} */
+
+/* td:nth-child(even), th:nth-child(even){
+    background-color: #bddfd0;
+} */
