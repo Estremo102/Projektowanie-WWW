@@ -4,7 +4,7 @@ p{
     margin-top: 20px;
 }
 
-a {
+/* a {
     text-decoration: none;
     padding: 10px;
     margin: 10px;
@@ -30,7 +30,7 @@ a:active {
     color: white;
     background-color: #600;
     border: 2px solid #600;
-}
+} */
 
 ul {
     /* list-style-type: circle;
@@ -51,4 +51,33 @@ ol{
 
 ol > li > ol{
     list-style-type: lower-alpha;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 10px;
+    background-color: #bddfd0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+td, th {
+    padding: 2px;
+}
+
+td {
+    background-color: #FFF;
+    font-weight: bold;
+}
+
+td>a{
+    font-weight: normal;
+}
+
+th.second{
+    background-color: #eaf4f0;
+}
+
+th {
+    color: #000099;
+    font-weight: 900;
 }
