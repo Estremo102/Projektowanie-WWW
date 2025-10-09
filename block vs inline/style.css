@@ -1,0 +1,29 @@
+img {
+    display: block;
+    border: 1px solid black;
+}
+
+/* div{
+    float: left;
+    text-align: center;
+    width: 120px;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+} */
+
+img{
+    width: 100%;
+}
+
+/* span {
+    border: 1px solid black;
+} */
+
+.i {
+    font-style: italic;
+}
+
+.b {
+    font-weight: bold;
+}
