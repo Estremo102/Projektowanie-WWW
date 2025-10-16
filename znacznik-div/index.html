@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&ltdiv&gt</title>
+    <style>
+        div{
+            background-color: #0000DD;
+        }
+        .container{
+            display: flex;
+        }
+
+        .container > div{
+            background-color: #DDDD00;
+            width: 33%;
+            margin: auto;
+            /* float: left; */
+            /* display: inline-block; */
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            background-color: #DDD;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- lorem ipsum <div>to jest div</div> dolor sit amet -->
+    <div class="container">
+        <div>
+            <h2>Znacznik div</h2>
+            <p>&ltdiv&gt to znacznik blokowy</p>
+            <p>może służyć jako kontener na dane</p>
+        </div>
+        
+        <div style="background-color: #DD0000;">
+            <h2>znacznik h2</h2>
+            <p>&lth2&gt to znacznik blokowy</p>
+            <p>jest to nagłówek</p>
+        </div>
+
+        <div style="background-color: #00DD00;">
+            <h2>znacznik p</h2>
+            <p>&ltp&gt to znacznik blokowy</p>
+            <p>jest to akapit</p>
+        </div>
+
+        <div>
+            <h2>znacznik img</h2>
+            <p>&ltimg&gt to znacznik inline</p>
+            <p>służy do dodawania obrazków</p>
+        </div>
+    </div>
+
+    <div class="grid">
+<div>
+            <h2>Znacznik div</h2>
+            <p>&ltdiv&gt to znacznik blokowy</p>
+            <p>może służyć jako kontener na dane</p>
+        </div>
+        
+        <div style="background-color: #DD0000;">
+            <h2>znacznik h2</h2>
+            <p>&lth2&gt to znacznik blokowy</p>
+            <p>jest to nagłówek</p>
+        </div>
+
+        <div style="background-color: #00DD00;">
+            <h2>znacznik p</h2>
+            <p>&ltp&gt to znacznik blokowy</p>
+            <p>jest to akapit</p>
+        </div>
+
+        <div>
+            <h2>znacznik img</h2>
+            <p>&ltimg&gt to znacznik inline</p>
+            <p>służy do dodawania obrazków</p>
+        </div>
+    </div>
+</body>
+</html>
