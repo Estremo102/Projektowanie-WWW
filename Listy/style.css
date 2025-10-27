@@ -1,0 +1,42 @@
+ul {
+    /* list-style-image: url(punktor.png); */
+    /* list-style-type: disc; */
+    list-style-position: outside;
+    background-color: #D00;
+    padding: 5px;
+    margin: 5px;
+}
+ul li {
+    border: 1px solid black;
+    background-color: #F88;
+    margin: 5px;
+    padding: 5px;
+}
+
+ul li ul{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+ul li ul li ul {
+    list-style-type: square;
+}
+
+ol li ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ol {
+    /* list-style-type: lower-greek; */
+    list-style-type: upper-roman;
+}
+
+ol li ol {
+    list-style-type: lower-alpha;
+}
+
+/* ul{
+    list-style: square inside url(punktor.png);
+} */

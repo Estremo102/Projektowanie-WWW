@@ -1,0 +1,11 @@
+ol {
+    list-style-type: upper-roman;
+}
+
+ol li ol {
+    list-style-type: lower-greek;
+}
+
+ol li ol li ul {
+    list-style-type: disc;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p style="border: 1px solid #000;">Lorem ipsum <a href="" style="border: 1px solid #F00;">dolor sit amet consectetur</a>, adipisicing elit. Deserunt quam ab, eos veritatis architecto perferendis maxime consequatur vel obcaecati. Vel corporis illo velit iure minima, a quibusdam doloremque nam adipisci.</p>
+    <p>Nam in facilis quos voluptate? <span>zncznik span</span> Incidunt saepe repellendus quis asperiores amet architecto voluptatibus ab repudiandae temporibus sunt, nemo quas harum pariatur at magnam delectus, hic, esse eaque? Incidunt, suscipit voluptas.</p>
+    <p>Praesentium impedit iure commodi <div>liniowy div</div> quos repellendus repellat quaerat quas est deserunt laborum consequatur, in explicabo itaque nam dignissimos. Eaque sapiente, totam consequuntur amet saepe blanditiis nulla nesciunt eligendi minima nemo.</p>
+    <p style="border: 1px solid #000;"> style="border: 1px solid #000;"</p>
+    <a href="" style="border: 1px solid #000;">style="border: 1px solid #000;"</a>
+    
+    <div id="imgbox1">
+        <img src="img_5terre.jpg" alt="">
+        <button onclick="removeElement()">usuń</button>
+    </div>
+    <div id="imgbox2">
+        <img src="img_forest.jpg" alt="">
+        <button onclick="changeVisibility()">ukryj</button>
+    </div>
+    <div>
+        <img src="img_lights.jpg" alt="">
+        <button onclick="resetElement()">resetuj</button>
+    </div>
+    <br><br>
+    <br><br>
+    <br><br>
+    <div>
+        znacznik <i>&lti&gti&lt/b&gt</i> można zrobić również za pomocą znacznika <span class="i">&ltspan class="i"&gtspan&lt/span&gt</span><br>
+        znacznik <b>&lti&gtb&lt/b&gt</b> można zrobić również za pomocą znacznika <span class="b">&ltspan class="b"&gtspan&lt/span&gt</span>
+    </div>
+        <script>
+function removeElement() {
+  document.getElementById("imgbox1").style.display = "none";
+}
+
+function changeVisibility() {
+  document.getElementById("imgbox2").style.visibility = "hidden";
+}
+
+function resetElement() {
+  document.getElementById("imgbox1").style.display = "block";
+  document.getElementById("imgbox2").style.visibility = "visible";
+}
+</script>
+</body>
+</html>
