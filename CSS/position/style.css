@@ -1,14 +1,20 @@
+body{
+    background-color: #EEE;
+}
+
 div{
     border: 2px solid green;
     padding: 10px;
+    position: static;
+    background-color: #88888844;
 }
 
-div.przyklad1 {
+div.przyklad1, div.przyklad10 {
     width: 600px;
     margin: auto;
 }
 
-div.przyklad2 {
+div.przyklad2, div.przyklad11, div.przyklad12 {
     max-width: 600px;
     margin: auto;
 }
@@ -18,13 +24,13 @@ div.przyklad3 {
     display: inline-block;
 }
 
-div.przyklad4 {
+div.przyklad4, div.przyklad13 {
     max-width: 600px;
     min-width: 400px;
     margin: auto;
 }
 
-div.przyklad5 {
+div.przyklad5, div.przyklad14 {
     width: 50%;
     margin: auto;
     height: 50px;
@@ -55,4 +61,98 @@ div.przyklad9 {
     margin: auto;
     min-height: 50px;
     max-height: 100px;
+}
+
+div.przyklad10{
+    position: static;
+    left: 30px;
+}
+
+div.przyklad11{
+    position: relative;
+    left: 30px;
+}
+
+div.przyklad12{
+    position: fixed; 
+    bottom: 0;
+    right: 0;
+}
+
+div.przyklad13{
+    position: absolute; 
+    top: 175px;
+    left: 200px;
+}
+
+div.relativeContainer{
+    position: relative;
+}
+
+div.przyklad14 {
+    position: sticky;
+    bottom: 0;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+.topleft{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+    background-color: #EEEEEE80;
+}
+
+.topright{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+    font-weight: 900;
+    color: black;
+    background-color: #EEEEEE80;
+}
+
+.bottomleft{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+    font-weight: 900;
+    color: black;
+    background-color: #EEEEEE80;
+}
+
+.bottomright{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+    font-weight: 900;
+    color: black;
+    background-color: #EEEEEE80;
+}
+
+.center{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    border: 0px;
+    background-color: transparent;
+}
+
+.center>div{
+    width: 100px;
+    margin: auto;
+    font-weight: 900;
+    text-align: center;
+    color: black;
+    background-color: #EEEEEE80;
 }
