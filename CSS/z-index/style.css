@@ -23,7 +23,7 @@ body{
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    animation: moveRL 10s infinite;
+    animation: moveRL 10s linear infinite;
 }
 
 @keyframes moveRL {
@@ -57,10 +57,10 @@ body{
     position: absolute;
     bottom: 200px;
     left: 30%;
-    z-index: 3;
+    z-index: -1;
 }
 
-.castle1{
+.castle1, .castle2{
     width: 400px;
     height: 400px;
     background-image: url(castle1.png);
@@ -72,12 +72,6 @@ body{
 }
 
 .castle2{
-    width: 400px;
-    height: 400px;
     background-image: url(castle2.png);
-    background-size: cover;
-    position: absolute;
-    bottom: 200px;
-    left: 70%;
     z-index: 4;
 }
