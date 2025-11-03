@@ -25,6 +25,7 @@ body{
     z-index: 2;
     animation: moveRL 10s infinite;
 }
+
 @keyframes moveRL {
     0% { 
         left: 10%;
