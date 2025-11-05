@@ -103,6 +103,28 @@ body{
     visibility: visible;
 }
 
+.questionmark > div > img{
+    width: 500px;
+    height: auto;
+}
+
+#qm5 > div > img{
+    width: 150px;
+}
+
+.float-right{
+    float: right;
+}
+
+.float-left{
+    float: left;
+}
+
+.float-none{
+    /* wartość domyślna */
+    float: none;
+}
+
 #qm0{
     bottom: 450px;
     left: 5%;
@@ -123,6 +145,26 @@ body{
     left: 65%;
 }
 
+#qm4{
+    bottom: 650px;
+    left: 5%;
+}
+
+#qm5{
+    bottom: 650px;
+    left: 25%;
+}
+
+#qm6{
+    bottom: 650px;
+    left: 45%;
+}
+
+#qm7{
+    bottom: 650px;
+    left: 65%;
+}
+
 #qm0 div{
     /* Wartość domyślna */
     overflow: visible;
@@ -133,9 +175,29 @@ body{
 }
 
 #qm2 div{
-    overflow: scroll;
+    overflow-x: scroll;
 }
 
 #qm3 div{
     overflow: auto;
+}
+
+#qm4 div{
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#qm5 div{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#qm6 div{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#qm7 div{
+    overflow-x: scroll;
+    overflow-y: auto;
 }
