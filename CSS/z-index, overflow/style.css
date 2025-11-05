@@ -5,7 +5,7 @@ body{
 .ground{
     width: 100%;
     height: 200px;
-    background-image: url(ground64.png);
+    background-image: url(images/ground64.png);
     background-size: repeat-x;
     position: absolute;
     bottom: 0;
@@ -16,7 +16,7 @@ body{
 .character{
     width: 75px;
     height: 100px;
-    background-image: url(mario.webp);
+    background-image: url(images/mario.webp);
     background-size: cover;
     position: absolute;
     bottom: 200px;
@@ -52,7 +52,7 @@ body{
 .bush{
     width: 300px;
     height: 200px;
-    background-image: url(krzak.png);
+    background-image: url(images/krzak.png);
     background-size: cover;
     position: absolute;
     bottom: 200px;
@@ -63,7 +63,7 @@ body{
 .castle1, .castle2{
     width: 400px;
     height: 400px;
-    background-image: url(castle1.png);
+    background-image: url(images/castle1.png);
     background-size: cover;
     position: absolute;
     bottom: 200px;
@@ -72,6 +72,70 @@ body{
 }
 
 .castle2{
-    background-image: url(castle2.png);
+    background-image: url(images/castle2.png);
     z-index: 4;
+}
+
+.questionmark{
+    width: 75px;
+    height: 75px;
+    background-image: url(images/questionmark.png);
+    background-size: cover;
+    position: absolute;
+    z-index: 3;
+}
+
+.questionmark > div {
+    width: 450px;
+    height: 150px;
+    background-color: rgba(255, 149, 0, 0.9);
+    border: 5px solid rgb(154, 100, 0);
+    position: relative;
+    top: -50px;
+    left: -175px;
+    visibility: hidden;
+    text-align: justify;
+    padding: 10px;
+    font-size: 32px;
+}
+
+.questionmark:hover > div {
+    visibility: visible;
+}
+
+#qm0{
+    bottom: 450px;
+    left: 5%;
+}
+
+#qm1{
+    bottom: 450px;
+    left: 25%;
+}
+
+#qm2{
+    bottom: 450px;
+    left: 45%;
+}
+
+#qm3{
+    bottom: 450px;
+    left: 65%;
+}
+
+#qm0 div{
+    /* Wartość domyślna */
+    overflow: visible;
+}
+
+#qm1 div{
+    overflow: hidden;
+}
+
+#qm2 div{
+    overflow: scroll;
+}
+
+#qm3 div{
+    overflow: auto;
 }
