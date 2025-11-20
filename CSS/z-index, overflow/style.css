@@ -1,0 +1,203 @@
+body{
+    background-color: rgb(0, 170, 255);
+}
+
+.ground{
+    width: 100%;
+    height: 200px;
+    background-image: url(images/ground64.png);
+    background-size: repeat-x;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.character{
+    width: 75px;
+    height: 100px;
+    background-image: url(images/mario.webp);
+    background-size: cover;
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    animation: moveRL 10s linear infinite;
+}
+
+@keyframes moveRL {
+    0% { 
+        left: 10%;
+        transform: scaleX(1);
+    }
+    49%{
+        left: 85%;
+        transform: scaleX(1);
+    }
+    50% {
+        left: 85%;
+        transform: scaleX(-1); 
+    }
+    99%{
+        left: 10%;
+        transform: scaleX(-1);
+    }
+    100% {
+        left: 10%;
+        transform: scaleX(1);
+    }
+}
+
+.bush{
+    width: 300px;
+    height: 200px;
+    background-image: url(images/krzak.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 200px;
+    left: 30%;
+    z-index: -1;
+}
+
+.castle1, .castle2{
+    width: 400px;
+    height: 400px;
+    background-image: url(images/castle1.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 200px;
+    left: 70%;
+    z-index: 0;
+}
+
+.castle2{
+    background-image: url(images/castle2.png);
+    z-index: 4;
+}
+
+.questionmark{
+    width: 75px;
+    height: 75px;
+    background-image: url(images/questionmark.png);
+    background-size: cover;
+    position: absolute;
+    z-index: 3;
+}
+
+.questionmark > div {
+    width: 450px;
+    height: 150px;
+    background-color: rgba(255, 149, 0, 0.9);
+    border: 5px solid rgb(154, 100, 0);
+    position: relative;
+    top: -50px;
+    left: -175px;
+    visibility: hidden;
+    text-align: justify;
+    padding: 10px;
+    font-size: 32px;
+}
+
+.questionmark:hover > div {
+    visibility: visible;
+}
+
+.questionmark > div > img{
+    width: 500px;
+    height: auto;
+}
+
+#qm5 > div > img{
+    width: 150px;
+}
+
+.float-right{
+    float: right;
+}
+
+.float-left{
+    float: left;
+}
+
+.float-none{
+    /* wartość domyślna */
+    float: none;
+}
+
+#qm0{
+    bottom: 450px;
+    left: 5%;
+}
+
+#qm1{
+    bottom: 450px;
+    left: 25%;
+}
+
+#qm2{
+    bottom: 450px;
+    left: 45%;
+}
+
+#qm3{
+    bottom: 450px;
+    left: 65%;
+}
+
+#qm4{
+    bottom: 650px;
+    left: 5%;
+}
+
+#qm5{
+    bottom: 650px;
+    left: 25%;
+}
+
+#qm6{
+    bottom: 650px;
+    left: 45%;
+}
+
+#qm7{
+    bottom: 650px;
+    left: 65%;
+}
+
+#qm0 div{
+    /* Wartość domyślna */
+    overflow: visible;
+}
+
+#qm1 div{
+    overflow: hidden;
+}
+
+#qm2 div{
+    overflow-x: scroll;
+}
+
+#qm3 div{
+    overflow: auto;
+}
+
+#qm4 div{
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#qm5 div{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#qm6 div{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#qm7 div{
+    overflow-x: scroll;
+    overflow-y: auto;
+}

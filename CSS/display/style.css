@@ -1,0 +1,39 @@
+div, a, p{
+    border: 1px solid black;
+}
+
+p {
+    display: inline;
+}
+
+.containerflex{
+    background-color: lightseagreen;
+    width: 80vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerflex>.content{
+    background-color: lightcoral;
+    width: 250px;
+    height: 100px;
+    flex-shrink: 0;
+}
+
+.containergrid{
+    background-color: lightseagreen;
+    width: 80vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% auto;
+}
+
+.containergrid>.content{
+    background-color: lightcoral;
+    height: 100px;
+}
+
+head, title{
+    display: block;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul>
+        <li class="active"><a href="" >Level 1</a></li>
+        <li><a href="float.html">Level 2</a></li>
+        <li><a href="">Level 3</a></li>
+        <li><a href="">Level 4</a></li>
+        <li><a href="">Level 5</a></li>
+    </ul>
+    <div class="ground"></div>
+    <div class="character"></div>
+    <div class="bush"></div>
+    <div class="castle1"></div>
+    <div class="castle2"></div>
+    <div class="questionmark" id="qm0">
+        <div>
+            Float, z-index i overflow to trzy ważne właściwości CSS,
+            które wpływają na układ i widoczność elementów na stronie internetowej.
+            Poniżej znajduje się krótki opis każdej z nich.
+            <img src="images/krzak.png" alt="Krzak">
+        </div>
+    </div>
+    <div class="questionmark" id="qm1">
+        <div>
+            Z-index określa kolejność nakładania się elementów na osi Z (głębokości).
+            Elementy z wyższą wartością z-index będą wyświetlane nad elementami z
+            niższą wartością z-index.
+            Wartość z-index działa tylko na elementy, które mają ustawioną właściwo
+            <img src="images/krzak.png" alt="Krzak">
+        </div>
+    </div>
+    <div class="questionmark" id="qm2">
+        <div>
+            Overflow określa, jak przeglądarka powinna obsługiwać zawartość, która
+            wykracza poza rozmiary swojego kontenera.
+            Wartości overflow to m.in. visible, hidden, scroll i auto.
+            Użycie overflow: hidden; ukrywa nadmiarową zawartość,
+            natomiast overflow: scroll; dodaje paski przewijania, gdy zawartość
+            przekracza rozmiar kontenera.
+            <img src="images/krzak.png" alt="Krzak">
+        </div>
+    </div>
+    <div class="questionmark" id="qm3">
+        <div>
+            Float pozwala na umieszczanie elementów obok siebie w poziomie,
+            co jest przydatne przy tworzeniu układów stron.
+            Elementy z ustawionym float są usuwane z normalnego przepływu dokumentu,
+            co może wpływać na układ innych elementów na stronie.
+            Aby uniknąć problemów z układem, często stosuje się clearfix.
+            <img src="images/krzak.png" alt="Krzak">
+        </div>
+    </div>
+    <div class="questionmark" id="qm4">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nobis sed labore, quis et eius iure eveniet. Labore, quis accusamus eos obcaecati vero enim, at iste aperiam excepturi saepe velit.
+            Laborum a veniam eum repudiandae quam hic odit facere blanditiis rem commodi, odio porro in voluptates, nulla nesciunt. Eos maxime quasi impedit non, maiores dignissimos soluta quos fugiat perferendis quae.
+            Animi delectus minima omnis vitae, veritatis quas assumenda fugit tempore! Beatae similique quasi quae. Quasi eos excepturi, voluptatibus minus, maxime necessitatibus facilis quod placeat, voluptate eveniet molestiae asperiores possimus enim.
+            <img src="images/krzak.png" alt="Krzak">
+        </div>
+    </div>
+
+    <div class="questionmark" id="qm5">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam voluptas aut earum numquam doloremque expedita quibusdam deserunt culpa dolore, dolorem vero placeat modi obcaecati, amet error blanditiis esse aperiam sit?
+            <img src="images/krzak.png" alt="Krzak">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nobis sed labore, quis et eius iure eveniet. Labore, quis accusamus eos obcaecati vero enim, at iste aperiam excepturi saepe velit.
+            <img src="images/krzak.png" alt="Krzak" class="float-right">
+            Laborum a veniam eum repudiandae quam hic odit facere blanditiis rem commodi, odio porro in voluptates, nulla nesciunt. Eos maxime quasi impedit non, maiores dignissimos soluta quos fugiat perferendis quae.
+            <img src="images/krzak.png" alt="Krzak" class="float-left">
+            Animi delectus minima omnis vitae, veritatis quas assumenda fugit tempore! Beatae similique quasi quae. Quasi eos excepturi, voluptatibus minus, maxime necessitatibus facilis quod placeat, voluptate eveniet molestiae asperiores possimus enim.
+            <img src="images/krzak.png" alt="Krzak" class="float-none">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere tempora delectus quod, architecto culpa asperiores. Tenetur dignissimos corrupti, dolorem architecto eveniet maiores nam amet excepturi quo id est atque voluptatibus.
+        </div>
+    </div>
+    <div class="questionmark" id="qm6">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nobis sed labore, quis et eius iure eveniet. Labore, quis accusamus eos obcaecati vero enim, at iste aperiam excepturi saepe velit.
+            Laborum a veniam eum repudiandae quam hic odit facere blanditiis rem commodi, odio porro in voluptates, nulla nesciunt. Eos maxime quasi impedit non, maiores dignissimos soluta quos fugiat perferendis quae.
+            Animi delectus minima omnis vitae, veritatis quas assumenda fugit tempore! Beatae similique quasi quae. Quasi eos excepturi, voluptatibus minus, maxime necessitatibus facilis quod placeat, voluptate eveniet molestiae asperiores possimus enim.
+            <img src="images/krzak.png" alt="Krzak">
+        </div>
+    </div>
+    <div class="questionmark" id="qm7">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nobis sed labore, quis et eius iure eveniet. Labore, quis accusamus eos obcaecati vero enim, at iste aperiam excepturi saepe velit.
+            Laborum a veniam eum repudiandae quam hic odit facere blanditiis rem commodi, odio porro in voluptates, nulla nesciunt. Eos maxime quasi impedit non, maiores dignissimos soluta quos fugiat perferendis quae.
+            Animi delectus minima omnis vitae, veritatis quas assumenda fugit tempore! Beatae similique quasi quae. Quasi eos excepturi, voluptatibus minus, maxime necessitatibus facilis quod placeat, voluptate eveniet molestiae asperiores possimus enim.
+            <img src="images/krzak.png" alt="Krzak">
+        </div>
+    </div>
+</body>
+</html>

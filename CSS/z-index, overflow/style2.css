@@ -1,0 +1,22 @@
+main, aside, footer{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-color: blue;
+    min-height: calc(100vh - 100px);
+    width: 75%;
+    float: right;
+}
+
+aside{
+    width: 25%;
+    min-height: calc(100vh - 100px);
+    background-color: lightgray;
+}
+
+footer{
+    background-color: gray;
+    height: 54px;
+}
