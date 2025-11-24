@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombinatory</title>
+    <style>
+        div p {
+            background-color: yellow;
+        }
+        div > p {
+            font-weight: bold;
+        }
+
+        a + p {
+            color: red;
+        }
+        a ~ p {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>kombinator spacji i &gt; działają bardzo podobnie, jednak można zaobserwować pewną drobną różnicę w ich działaniu.</p>
+        <p>spacja działa na wszystkie elementy potomne, natomiast &gt; tylko na bezpośrednie potomne.</p>
+        <section><p>dlatego ten akapit jest częściowo wystylizowany</p></section>
+    </div>
+
+    <div>
+        <p>kombiator + i ~ również działają podobnie, + działa na następny element rodzeństwa, natomiast ~ na wszystkie następne elementy rodzeństwa.</p>
+        <a href="#">link</a>
+        <p>ten akapit jest wystylizowany, ponieważ jest bezpośrednim następnikiem linku</p>
+        <p>ten akapit również jest wystylizowany, ponieważ jest następnym rodzeństwem poprzedniego akapitu, jednak w inny sposób</p>
+    </div>
+</body>
+</html>
