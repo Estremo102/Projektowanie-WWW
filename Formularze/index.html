@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularze</title>
+</head>
+<body>
+    <form>
+        <input type="text"> <br>
+        <input type="radio"> <br>
+        <input type="checkbox"> <br>
+        <input type="submit"> <br>
+        <input type="button"> <br>
+    </form>
+    <br>
+    <form action="strona2.html" method="get">
+        <!--
+            target="_blank" - nowa karta
+            target="_self" - aktualna karta
+        -->
+        <label for="imie">Imie:</label><br>
+        <input type="text" id="imie" name="imie" placeholder="np. Jan"><br>
+        <label for="nazwisko">Nazwisko:</label><br>
+        <input type="text" name="nazwisko" id="nazwisko" placeholder="np. Kowalski"><br>
+        <label for="haslo">Hasło:</label> <br>
+        <input type="password" name="haslo" id="haslo" placeholder="hasło..."><br>
+        <p>Płeć</p>
+        <input type="radio" name="plec" id="M" value="M"> <label for="M">M</label> <br>
+        <input type="radio" name="plec" id="K" value="K"> <label for="K">K</label> <br>
+        <input type="radio" name="plec" id="O" value="O"> <label for="O">Nie chce podawać/świeże bułki, wędliny itd.</label> <br>
+        <label for="wojewodztwo">Województwo:</label> <br>
+        <select name="wojewodztwo" id="wojewodztwo"> <!-- multiple - pozwala wybrać kilka opcji -->
+            <option value="Małopolskie">Małopolskie</option>
+            <option value="Podkarpackie">Podkarpackie</option>
+            <option value="Śląskie">Śląskie</option>
+            <option value="Opolskie">Opolskie</option>
+            <option value="Dolnośląskie">Dolnośląskie</option>
+        </select>
+        <p>Zgody</p>
+        <input type="checkbox" name="zgoda1" id="zgoda1" value="regulamin"> <label for="zgoda1"> Akceptuje regulamin</label> <br>
+        <input type="checkbox" name="zgoda2" id="zgoda2" value="reklamy"> <label for="zgoda2"> Wyrażam zgody marketingowe</label> <br>
+        <input type="checkbox" name="zgoda3" id="zgoda3" value="nerka"> <label for="zgoda3"> Oddaje nerkę</label> <br>
+        <input type="submit" value="Wyślij ->">
+    </form>
+
+    <form action="">
+        <label for="Email">Email kontaktowy:</label><br>
+        <input type="email" required> <br>
+        <textarea name="wiadomosc" id="wiadomosc"></textarea>
+        <input type="submit" value="►">
+    </form>
+
+    <form>
+        <input type="number" name="a" id="a" placeholder="a">x<sup>2</sup>+
+        <input type="number" name="b" id="b" placeholder="b">x+
+        <input type="number" name="c" id="c" placeholder="c">=0
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
