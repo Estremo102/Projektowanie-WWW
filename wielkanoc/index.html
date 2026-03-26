@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daty Wielkanocy w latach 1800 - 2200</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Daty Wielkanocy</h1>
+    <h2>w latach 1800 - 2200</h2>
+    <h2>(Dates of easter, 1800 - 2200)</h2>
+    <p>
+        Tabelaryczne dni miesiąca <span class="red">kwietnia</span> odróżniono od <span class="blue">marcowych</span> ich kolorem <br>
+        (Easter Sunday dates of <span class="red">April</span> and <span class="blue">March</span> are distinguished by their colour)
+    </p>
+    <table>
+        <tr>
+            <td>
+                <pre><hr>Rok  0  1  2  3  4  5  6  7  8  9<hr>dekady<hr></pre>
+            </td>
+            <td class="transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>
+                <pre><hr>Rok  0  1  2  3  4  5  6  7  8  9<hr>dekady<hr></pre>
+            </td>
+        </tr>
+    </table>
+    <p><span class="red">Skrypt w js użyty do obliczeń</span></p>
+    <div class="code">
+        <pre><code>function easter(IY) {
+  let A = IY % 19;
+  let B = Math.floor(IY / 100);
+  let C = IY % 100;
+  let H = (19 * A + B - Math.floor(B / 4) - Math.floor((B + 1 - Math.floor((B + 8) / 25)) / 3) + 15) % 30;
+  let L = (32 + 2 * (B % 4 + Math.floor(C / 4)) - H - (C % 4)) % 7;
+  let M = Math.floor((A + 11 * H + 22 * L) / 451);
+  let N = H + L - 7 * M + 114;
+  let month = Math.floor(N / 31); // 3 = marzec, 4 = kwiecień
+  let day = 1 + (N % 31);
+  return { month, day };
+}</code></pre>
+    </div>
+</body>
+</html>
