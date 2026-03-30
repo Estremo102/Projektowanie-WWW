@@ -44,3 +44,7 @@ div.code {
     margin: auto;
     overflow-y: auto;
 }
+
+pre {
+    text-align: left;
+}

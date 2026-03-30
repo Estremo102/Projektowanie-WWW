@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daty Wielkanocy w latach 1800 - 2200</title>
     <link rel="stylesheet" href="style.css">
+    <script src="wielkanoc.js" defer></script>
 </head>
 <body>
     <h1>Daty Wielkanocy</h1>
@@ -17,28 +18,33 @@
     <table>
         <tr>
             <td>
-                <pre><hr>Rok  0  1  2  3  4  5  6  7  8  9<hr>dekady<hr></pre>
+                <pre id="lata1800-2009"></pre>
             </td>
             <td class="transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
             <td>
-                <pre><hr>Rok  0  1  2  3  4  5  6  7  8  9<hr>dekady<hr></pre>
+                <pre id="lata2000-2209"><hr>Rok  0  1  2  3  4  5  6  7  8  9<hr>dekady<hr></pre>
             </td>
         </tr>
     </table>
     <p><span class="red">Skrypt w js użyty do obliczeń</span></p>
     <div class="code">
-        <pre><code>function easter(IY) {
-  let A = IY % 19;
-  let B = Math.floor(IY / 100);
-  let C = IY % 100;
-  let H = (19 * A + B - Math.floor(B / 4) - Math.floor((B + 1 - Math.floor((B + 8) / 25)) / 3) + 15) % 30;
-  let L = (32 + 2 * (B % 4 + Math.floor(C / 4)) - H - (C % 4)) % 7;
-  let M = Math.floor((A + 11 * H + 22 * L) / 451);
-  let N = H + L - 7 * M + 114;
-  let month = Math.floor(N / 31); // 3 = marzec, 4 = kwiecień
-  let day = 1 + (N % 31);
-  return { month, day };
-}</code></pre>
+        <pre><code>function kiedyWielkanoc (rok) {
+/*A*/ let cyklKsiezyca = rok % 19;
+/*B*/ let wiek = Math.floor(rok / 100);
+/*C*/ let lataWieku = rok % 100; 
+/*H*/ let epakta = (19*cyklKsiezyca+wiek-Math.floor(wiek/4)-(wiek+1-Math.floor((wiek+8)/25))/3+15) % 30;
+/*L*/ let poprawkaTygodniowa = (32+2*(wiek % 4+Math.floor(lataWieku/4))-epakta-lataWieku % 4) % 7;
+/*M*/ let poprawkaMiesieczna = Math.floor((cyklKsiezyca+11*epakta+22*poprawkaTygodniowa)/451);
+/*N*/ let data = epakta+poprawkaTygodniowa-7*poprawkaMiesieczna+114;
+/*ID*/let dzien = 1 + (data % 31);
+/*IM*/let miesiac = 4;
+if(Math.floor(data/31) == 3) {
+// 	IF(N/31.EQ.3) IM = IM-1
+    miesiac--;
+}
+    return `${dzien}.${miesiac}`;
+}
+</code></pre>
     </div>
 </body>
 </html>
