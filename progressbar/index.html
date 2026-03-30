@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasek postępu</title>
+    <style>
+        .progressbar{
+            border: 2px #000 solid;
+            border-radius: 5%;
+            width: 500px;
+            height: 20px;
+            padding: 0px;
+        }
+
+        .progressbar > div {
+            background-color: #0D0;
+            width: 30%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        progress{
+            width: 500px;
+            background-color: #edeeff;
+            border: 2px #000 solid;
+        }
+
+        .phpprogress::-moz-progress-bar {
+            background-color: #777bb3;
+        }
+
+        .phpprogress::-webkit-progress-value {
+            background-color: #777bb3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="progressbar">
+        <div></div>
+    </div>
+    <br>
+    <progress id="topicProgress" value="30" max="100">Postęp w temacie:</progress> <br> <br>
+    <progress class="phpprogress" value="30" max="100">Postęp w temacie:</progress>
+</body>
+</html>
