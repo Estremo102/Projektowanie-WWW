@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daty Wielkanocy w latach 1800 - 2200</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="wielkanoc.js" defer></script>
+</head>
+<body>
+    <h1>Daty Wielkanocy</h1>
+    <h2>w latach 1800 - 2200</h2>
+    <h2>(Dates of easter, 1800 - 2200)</h2>
+    <p>
+        Tabelaryczne dni miesiąca <span class="red">kwietnia</span> odróżniono od <span class="blue">marcowych</span> ich kolorem <br>
+        (Easter Sunday dates of <span class="red">April</span> and <span class="blue">March</span> are distinguished by their colour)
+    </p>
+    <table>
+        <tr>
+            <td>
+                <pre id="lata1800-2009"></pre>
+            </td>
+            <td class="transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>
+                <pre id="lata2000-2209"><hr>Rok  0  1  2  3  4  5  6  7  8  9<hr>dekady<hr></pre>
+            </td>
+        </tr>
+    </table>
+    <p><span class="red">Skrypt w js użyty do obliczeń</span></p>
+    <div class="code">
+        <pre><code>function kiedyWielkanoc (rok) {
+/*A*/ let cyklKsiezyca = rok % 19;
+/*B*/ let wiek = Math.floor(rok / 100);
+/*C*/ let lataWieku = rok % 100; 
+/*H*/ let epakta = (19*cyklKsiezyca+wiek-Math.floor(wiek/4)-(wiek+1-Math.floor((wiek+8)/25))/3+15) % 30;
+/*L*/ let poprawkaTygodniowa = (32+2*(wiek % 4+Math.floor(lataWieku/4))-epakta-lataWieku % 4) % 7;
+/*M*/ let poprawkaMiesieczna = Math.floor((cyklKsiezyca+11*epakta+22*poprawkaTygodniowa)/451);
+/*N*/ let data = epakta+poprawkaTygodniowa-7*poprawkaMiesieczna+114;
+/*ID*/let dzien = 1 + (data % 31);
+/*IM*/let miesiac = 4;
+if(Math.floor(data/31) == 3) {
+// 	IF(N/31.EQ.3) IM = IM-1
+    miesiac--;
+}
+    return `${dzien}.${miesiac}`;
+}
+</code></pre>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body {
+    background-color: #ffffe0;
+    text-align: center;
+}
+
+h1 {
+    color: #c00090;
+}
+
+h2 {
+    color: #c00000;
+}
+
+span.red {
+    color: #c30f0d;
+}
+
+span.blue {
+    color: #1313b3;
+}
+
+p {
+    font-weight: bold;
+}
+
+td {
+    background-color: #fffff0;
+}
+
+td.transparent {
+    background-color: #FFFFFF00;
+}
+
+table {
+    margin: auto;
+}
+
+div.code {
+    background-color: #d0ffff;
+    border: #c00000 3px solid;
+    text-align: left;
+    color: #c00000;
+    width: 500px;
+    margin: auto;
+    overflow-y: auto;
+}
+
+pre {
+    text-align: left;
+}
