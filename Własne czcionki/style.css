@@ -1,0 +1,14 @@
+@font-face {
+    font-family: PaintFont;
+    src: url(PaintFont.ttf);
+}
+
+h1 {
+    font-family: PaintFont;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: PaintFont;
+    text-transform: uppercase;
+}
