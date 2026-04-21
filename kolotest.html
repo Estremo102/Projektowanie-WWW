@@ -1,0 +1,63 @@
+<div style="text-align: center; font-family: sans-serif;">
+    <input type="text" id="itemsInput" placeholder="Ania, Tomek, Kasia, Jan" style="width: 300px; padding: 5px;">
+    <button onclick="updateWheel()">Generuj koło</button>
+    <br><br>
+    <canvas id="wheelCanvas" width="400" height="400"></canvas>
+</div>
+
+<script>
+function updateWheel() {
+    const canvas = document.getElementById('wheelCanvas');
+    const ctx = canvas.getContext('2d');
+    const input = document.getElementById('itemsInput').value;
+    
+    // Rozdzielanie elementów przecinkiem i usuwanie zbędnych spacji
+    const items = input.split(',').map(item => item.trim()).filter(item => item !== "");
+    
+    if (items.length === 0) return;
+
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
+    const radius = 180;
+    const sliceAngle = (2 * Math.PI) / items.length;
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    items.forEach((item, i) => {
+        const startAngle = i * sliceAngle;
+        const endAngle = startAngle + sliceAngle;
+
+        // 1. Rysowanie wycinka koła
+        ctx.beginPath();
+        ctx.moveTo(centerX, centerY);
+        ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+        ctx.fillStyle = `hsl(${(i * 360) / items.length}, 70%, 60%)`; // Dynamiczne kolory
+        ctx.fill();
+        ctx.stroke();
+
+        // 2. Dodawanie tekstu
+        ctx.save();
+        ctx.translate(centerX, centerY);
+        // Obrót do środka danego wycinka
+        ctx.rotate(startAngle + sliceAngle / 2);
+        
+        ctx.textAlign = "right";
+        ctx.fillStyle = "#fff";
+        ctx.font = "bold 16px Arial";
+        // Przesunięcie tekstu w stronę krawędzi koła
+        ctx.fillText(item, radius - 10, 5);
+        ctx.restore();
+    });
+
+    // Opcjonalnie: Strzałka wskazująca (znacznik)
+    ctx.beginPath();
+    ctx.moveTo(centerX + radius + 10, centerY);
+    ctx.lineTo(centerX + radius + 30, centerY - 10);
+    ctx.lineTo(centerX + radius + 30, centerY + 10);
+    ctx.fillStyle = "red";
+    ctx.fill();
+}
+
+// Inicjalizacja przy starcie
+updateWheel();
+</script>
