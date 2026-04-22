@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(0, 170, 255);
+}
+
+.ground{
+    width: 100%;
+    height: 200px;
+    background-image: url(images/ground64.png);
+    background-size: repeat-x;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.character{
+    width: 75px;
+    height: 100px;
+    background-image: url(images/mario.webp);
+    background-size: cover;
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.bush{
+    width: 300px;
+    height: 200px;
+    background-image: url(images/krzak.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 200px;
+    left: 30%;
+    z-index: -1;
+}
+
+.castle1, .castle2{
+    width: 400px;
+    height: 400px;
+    background-image: url(images/castle1.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 200px;
+    left: 70%;
+    z-index: 0;
+}
+
+.castle2{
+    background-image: url(images/castle2.png);
+    z-index: 4;
+}
+
+.questionmark{
+    width: 75px;
+    height: 75px;
+    background-image: url(images/questionmark.png);
+    background-size: cover;
+    position: absolute;
+    z-index: 3;
+}
+
+#qm0{
+    bottom: 450px;
+    left: 40%;
+}
