@@ -20,9 +20,25 @@ body{
     background-size: cover;
     position: absolute;
     bottom: 200px;
-    left: 50%;
+    left: 5%;
     transform: translateX(-50%);
     z-index: 2;
+    animation: walk 5s;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    animation-direction: normal; /* wartość domyślna */
+    animation-fill-mode: forwards;
+}
+
+@keyframes walk {
+    0% {left: 5%; bottom: 200px;
+    animation-timing-function: linear;}
+    30% {left: 42%; bottom: 200px;
+    animation-timing-function: ease-out;}
+    40% {left: 42%; bottom: 350px; 
+    animation-timing-function: ease-in;}
+    50% {left: 42%; bottom: 200px;}
+    100% {left: 87%; bottom: 200px;}
 }
 
 .bush{
