@@ -1,8 +1,8 @@
-body{
+body {
     background-color: rgb(0, 170, 255);
 }
 
-.ground{
+.ground {
     width: 100%;
     height: 200px;
     background-image: url(images/ground64.png);
@@ -13,7 +13,7 @@ body{
     z-index: 1;
 }
 
-.character{
+.character {
     width: 75px;
     height: 100px;
     background-image: url(images/mario.webp);
@@ -41,7 +41,7 @@ body{
     100% {left: 87%; bottom: 200px;}
 }
 
-.bush{
+.bush {
     width: 300px;
     height: 200px;
     background-image: url(images/krzak.png);
@@ -52,7 +52,7 @@ body{
     z-index: -1;
 }
 
-.castle1, .castle2{
+.castle1, .castle2 {
     width: 400px;
     height: 400px;
     background-image: url(images/castle1.png);
@@ -63,12 +63,12 @@ body{
     z-index: 0;
 }
 
-.castle2{
+.castle2 {
     background-image: url(images/castle2.png);
     z-index: 4;
 }
 
-.questionmark{
+.questionmark {
     width: 75px;
     height: 75px;
     background-image: url(images/questionmark.png);
@@ -77,7 +77,48 @@ body{
     z-index: 3;
 }
 
-#qm0{
+#qm0 {
     bottom: 450px;
     left: 40%;
+}
+
+.tooltip {
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltiptext {
+    width: 200px;
+    background-color: #0008;
+    color: #FFF;
+    font-weight: 900;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    visibility: hidden;
+    border: #000 solid 2px;
+    top: -65px;
+    left: -100%;
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #0008 transparent transparent transparent;
 }
