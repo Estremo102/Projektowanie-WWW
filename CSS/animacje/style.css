@@ -122,3 +122,53 @@ body {
     border-style: solid;
     border-color: #0008 transparent transparent transparent;
 }
+
+.avatar {
+    border-radius: 50%;
+    border: 10px solid #DDD;
+    padding: 0px;
+    width: 10%;
+    height: auto;
+    transition: border 1s, padding 1s;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+.avatar:hover {
+    padding: 8px;
+    border: 2px solid #DDD;
+}
+
+.polaroid {
+    position: absolute;
+    right: 30%;
+    top: 10%;
+    width: 300px;
+    height: 340px;
+    background-color: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+    transition: transform 0.9s, opacity 0.5s;
+}
+
+.polaroid:hover {
+    transform: rotate3d(1, 0.7, 0, 25deg);
+    opacity: 1;
+}
+
+.polaroid img {
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    width: 92%;
+}
+
+.polaroid span {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
