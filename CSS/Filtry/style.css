@@ -1,0 +1,69 @@
+img {
+    width: 15%;
+    height: auto;
+    margin: 10px;
+}
+
+#img2 {
+    filter: blur(4px);
+}
+
+#img3 {
+    filter: brightness(150%);
+}
+
+#img4 {
+    filter: contrast(150%);
+}
+
+#img5 {
+    filter: drop-shadow(16px 16px 20px red);
+}
+
+#img6 {
+    filter: grayscale(100%);
+}
+
+#img7 {
+    animation: img7anim 5s linear infinite;
+}
+
+@keyframes img7anim {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#img8 {
+    filter: opacity(50%);
+}
+
+#img13 {
+    position: absolute;
+    top: 550px;
+    left: 20%;
+    z-index: -1;
+}
+
+#img9 {
+    filter: saturate(200%);
+}
+
+#img10 {
+    filter: sepia(100%);
+}
+
+#img11 {
+    filter: invert(100%);
+}
+
+#img12 {
+    filter: blur(2px) brightness(125%) contrast(125%) drop-shadow(10px 10px 5px blue) grayscale(10%) hue-rotate(180deg) invert(100%) opacity(90%) saturate(125%) sepia(20%);
+}
+
+#img14 {
+    filter: hue-rotate(180deg) invert(100%);
+}
