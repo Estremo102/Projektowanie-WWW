@@ -67,3 +67,40 @@ img {
 #img14 {
     filter: hue-rotate(180deg) invert(100%);
 }
+
+#img15 {
+    clip-path: circle(41%);
+}
+
+#img16 {
+    clip-path: circle(41% at right);
+}
+
+#img17 {
+    clip-path: circle(41% at left);
+    display: block;
+    float: left;
+    width: 15%;
+    shape-outside: circle(45% at left);
+}
+
+div {
+    border: 4px solid black;
+}
+
+p {
+    display: block;
+    font-size: 27px;
+}
+
+#img18 {
+    clip-path: ellipse(35% 50%);
+}
+
+#img19 {
+    clip-path: ellipse(35% 50% at bottom);
+}
+
+#img20 {
+    clip-path: polygon(50% 10%, 60% 10%, 70% 15%, 72% 17%,100% 100%, 50% 40%, 50% 100%, 0% 50%);
+}
