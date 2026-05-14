@@ -21,8 +21,19 @@
     style="fill:#EE0000;stroke:#00000080;stroke-width:10;"/>
   </svg>
   <svg width="300" height="300">
-    <polygon points="10,10 10,100 100,100 100,10"
-    style="fill:lime;stroke:green;stroke-width:5;"/>
+    <polygon points="150,10 10,280 280,120 10,120 280,280"
+    style="fill:lime;stroke:green;stroke-width:5;fill-rule: evenodd;"/>
+  </svg>
+  <svg width="200" height="200">
+    <defs>
+      <linearGradient id="gradient1">
+        <stop offset="0%" stop-color="#FFFFFF" />
+        <stop offset="50%" stop-color="#89cff0" />
+        <stop offset="100%" stop-color="#000080" />
+      </linearGradient>
+    </defs>
+    <ellipse cx="100" cy="70" rx="100" ry="60" fill="url(#gradient1)"/>
+    <text fill="#FFFFFF" font-size="45" x="50" y="80" font-family="sans-serif">SVG</text>
   </svg>
 </body>
 </html>
