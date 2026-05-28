@@ -1,0 +1,12 @@
+div {
+    /* column-count: 3; */
+    /* column-width: 30vw; */
+    columns: 3 500px;
+    column-gap: 40px;
+    text-align: justify;
+    column-fill: balance;
+    column-rule: 80px solid #EE00EE80;
+    /* column-rule-color: #EE00EE80;
+    column-rule-width: 80px;
+    column-rule-style: solid; */
+}
