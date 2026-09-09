@@ -16,6 +16,16 @@ p{
     margin: 20px;
 }
 
+p::first-letter{
+    font-size: 200%;
+    color: #6009cb;
+}
+
+p::first-line{
+    font-size: 150%;
+    color: #09cb3c;
+}
+
 a{
     margin: 10px;
     padding: 10px;
