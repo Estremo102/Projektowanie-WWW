@@ -1,0 +1,37 @@
+body {
+    background-color: beige;
+    font-size: 28px;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+h2 {
+    color: rgb(61, 20, 98);
+}
+
+/* Selektor znajdujący element po id zaczynamy od znaku # */
+#selektoryH2 {
+    text-decoration:overline;
+}
+
+/* Selektor znajdujący elementy po klasie zaczynamy od znaku . */
+.pierwszyAkapit {
+    font-size: 140%;
+}
+
+/* przecinek pozwala na ostylowanie kilku elementów jednocześnie */
+div, p {
+    margin: 10px;
+    padding: 10px;
+}
+
+/* ostylowanie akapitów które są zagnieżdżone wewnątrz divów */
+div p {
+    color: #38135b;
+}
+
+div > p {
+    color: #612896;
+}
