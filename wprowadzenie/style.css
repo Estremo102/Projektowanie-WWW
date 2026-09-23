@@ -11,6 +11,10 @@ h2 {
     color: rgb(61, 20, 98);
 }
 
+div {
+    border: 5px solid #38135b;
+}
+
 /* Selektor znajdujący element po id zaczynamy od znaku # */
 #selektoryH2 {
     text-decoration:overline;
