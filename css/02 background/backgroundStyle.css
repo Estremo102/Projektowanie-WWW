@@ -1,0 +1,55 @@
+body {
+    background-color: darkslategray;
+}
+
+h1 {
+    background-color: #62d1d1;
+}
+
+h2 {
+    background: #FFFFFFAA;
+}
+
+div {
+    background-color: #508585;
+    padding: 30px;
+}
+
+p {
+    background-color: #2f4f4f;
+    color: #62d1d1;
+    margin: 20px;
+}
+
+.red {
+    background-color: #FF000080; /* Tutaj zmieniamy samo tło  */
+    /* background-color: #FF0000;
+    opacity: 0.5;  a w  tym przypadku, zmieniamy także przezroczystość innych elementów*/
+}
+
+.red2 {
+    background-color: #FF0000;
+    opacity: 0.5;
+}
+
+#shrek {
+    background-image: url(shrek.gif);
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    background-repeat: no-repeat;
+    /* background-position: right top; */
+    background-position: 50%;
+}
+
+#shrek h2 {
+    width: 25%;
+}
+
+.okno {
+    /* background-color: #2f4f4f;
+    background-image: url(5208086.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-attachment: fixed; */
+    background: #2f4f4f url(5208086.jpg) no-repeat 50% fixed;
+}
