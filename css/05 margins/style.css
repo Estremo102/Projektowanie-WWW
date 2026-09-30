@@ -39,3 +39,7 @@ p {
     margin: 10px 20px 30px 40px;
     padding: 10px 25px;
 }
+
+p:hover {
+    outline: 10px solid yellowgreen;
+}
