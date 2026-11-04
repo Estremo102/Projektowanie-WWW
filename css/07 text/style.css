@@ -1,0 +1,66 @@
+h1 {
+    color: #D41111;
+    text-shadow: 2px 2px 3px #200, 500px 0px 2px red;
+}
+
+p {
+    color: #DDD;
+    background-color: #333;
+}
+
+.left {
+    text-align: left;
+    text-decoration-line: none;
+    text-indent: 50px;
+}
+
+.right {
+    text-align: right;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    letter-spacing: 5px;
+    word-spacing: 15px;
+}
+
+.center {
+    text-align: center;
+    text-decoration: overline blue double 2px;
+    letter-spacing: -2px;
+    line-height: 0.8;
+    word-spacing: 0px;
+}
+
+.justify {
+    text-align: justify;
+    text-decoration-line: line-through;
+    text-decoration-color: red;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 25%;
+    line-height: 1.8;
+}
+
+.start {
+    text-align: start;
+    direction: ltr;
+    text-decoration-line: overline underline line-through;
+    text-decoration-style: wavy;
+}
+
+.end {
+    text-align: end;
+    direction: rtl;
+    text-decoration: dashed underline;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
