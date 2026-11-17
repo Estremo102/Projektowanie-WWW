@@ -1,0 +1,21 @@
+a:link, a:visited {
+    color: #3AE;
+    background-color: #FF0;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: help;
+}
+
+/* a:visited {
+    color:#DD0;
+} */
+
+a:hover {
+    color: #AA0;
+    background-color: #FFF;
+}
+
+a:active {
+    color: #FFF;
+    background-color: #AA0;
+}
