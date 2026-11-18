@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylowanie list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Listy w HTML</h1>
+    <p>W HTML mamy listy ol - numerowane i ul - punktowane, stylować je możemy za pomocą:</p>
+    <ul>
+        <li>list-style-type</li>
+        <li>list-style-image</li>
+        <li>list-style-position</li>
+        <li>list-style</li>
+    </ul>
+    <p>Zdefiniujmy kilka klas i zobaczmy jak wyglądają listy które z nich korzystają</p>
+    <ol class="d">
+        <li>ol.a {list-style-type: upper-roman;}</li>
+        <li>ol.b {list-style-type: lower-roman;}</li>
+        <li>ol.c {list-style-type: lower-alpha;}</li>
+        <li>ol.d {list-style-type: decimal;}</li>
+    </ol>
+    <br>
+    <ul class="g">
+        <li>ul.e {list-style-type: circle}</li>
+        <li>ul.f {list-style-type: disc}</li>
+        <li>ul.g {list-style-type: square}</li>
+    </ul>
+    <br>
+    <p>Zróbmy listę zagnieżdżoną</p>
+    <ol>
+        <li>Lista numerowana</li>
+        <li>
+            <ol class="c">
+                <li>Lista numerowana zagnieżdżona</li>
+                <li>punkt 2</li>
+            </ol>
+        </li>
+        <li>
+            <ul>
+                <li>Lista punktowana zagnieżdżona</li>
+                <li>
+                    <ul>
+                        <li>dalsze zagnieżdżenie</li>
+                        <li>kolejny punkt</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ol>
+    <br>
+    <p>Lista może mieć też obrazki jako punktory</p>
+    <ul class="shrek">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>Forever</li>
+    </ul>
+
+    <ul class="h">
+        <li>Lista</li>
+        <li>bez</li>
+        <li>Punktorów</li>
+    </ul>
+
+    <p>Kolory</p>
+    <ol class="color">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ul class="color">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+</body>
+</html>

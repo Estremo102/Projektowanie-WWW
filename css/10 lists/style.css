@@ -1,0 +1,48 @@
+ol.a {list-style-type: upper-roman;}
+ol.b {list-style-type: lower-roman;}
+ol.c {list-style-type: lower-alpha;}
+ol.d {list-style-type: decimal;}
+ul.e {list-style-type: circle}
+ul.f {list-style-type: disc}
+ul.g {list-style-type: square}
+
+.shrek {
+    /* list-style-image: url('shrek.gif');
+    list-style-type: square;
+    list-style-position: inside; 
+    można zapisać też skróconym zapisem*/
+    list-style: square inside url('shrek.gif');
+    /* list-style-type: outside; Wartość domyślna */
+} 
+.shrek li {
+    border: 1px black solid;
+}
+
+ul.h {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol.color {
+  background: salmon;
+  padding: 20px;
+}
+
+ol.color li {
+  background: mistyrose;
+  color: darkred;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+ul.color {
+  background: powderblue;
+  padding: 20px;
+}
+
+ul.color li {
+  background: mistyrose;
+  color: darkblue;
+  margin: 5px;
+}
