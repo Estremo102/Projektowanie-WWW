@@ -1,0 +1,33 @@
+table, th, td {
+    border: 5px solid lightblue;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    border: 2px solid lightblue;
+}
+
+th {
+    height: 50px;
+    text-align: left;
+    vertical-align: bottom;
+    background-color: lightblue;
+}
+
+td:hover {
+    background-color: lightblue;
+    color: blue
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(218, 234, 239);
+}
+
+.tablecontainer {
+    overflow-x: auto;
+}
